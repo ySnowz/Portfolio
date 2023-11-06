@@ -1,0 +1,794 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+header {
+  padding: 0 140px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+ul li a {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #1b151c;
+}
+a:active {
+  color: #c70191;
+}
+button {
+  padding: 8px 16px;
+  font-size: 24px;
+  background-color: #e434b4;
+  color: #ECBAEF;
+  font-weight: 700; 
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+button:hover {
+  scale: 1.1;
+}
+main {
+  width: 100%;
+  margin-top: 64px;
+  user-select: none;
+}
+.mobileText {
+  display: none;
+}
+.logo {
+  user-select: none;
+  width: 33px;
+  height: 66px;
+}
+.heroSection {
+  padding: 0 140px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 150px;
+}
+.heroImage img {
+  width: 450px;
+  height: 430px;
+}
+.heroText {
+  position: relative;
+  font-size: 8vmin;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  line-height: 12vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  color: #2d232e;
+}
+.box-decorator {
+  position: absolute;
+  z-index: -1;
+  width: 30px;
+  top: -5px;
+  left: -15px;
+  height: 30px;
+  background-color: #e434b4;
+  border-radius: 10px;
+}
+.decorator {
+  background-color: #c70191;
+  background-image: linear-gradient(-90deg, #c70191, #710d78);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.loc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+  font-size: 14px;
+  background-color: #c70191;
+  background-image: linear-gradient(-90deg, #c70191, #710d78);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.loc .icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.experience {
+  padding: 140px 140px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.experience .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 16px;
+}
+.experience .projects .desc {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+.experience .projects .decoRow {
+  height: 2px;
+  width: 500px;
+  border-radius: 2px;
+  background-color: #fcfcfc;
+}
+.experience .projects .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+  position: relative;
+}
+.experience .projects .cards .card {
+  width: 200px;
+  height: 330px;
+}
+.experience .projects .cards .puma {
+  background-image: url(./img/Puma.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.experience .projects .cards .prada {
+  background-image: url(./img/Prada.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.experience .experienceText {
+  font-size: 15vmin;
+  font-weight: bold;
+  font-family: "Poppins";
+  letter-spacing: 0px;
+  background-color: #c70191;
+  background-image: linear-gradient(-90deg, #c70191, #710d78);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.mobileText {
+  display: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.card .hover-access {
+  height: 35px;
+  width: 100%;
+  text-align: center;
+}
+.puma .hover-access a {
+  color: #d1cbcb;
+  text-decoration: underline;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.prada .hover-access a {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #1e1e1e;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.card-hover-enable {
+  animation: 0.1s linear overlayEnable;
+}
+.card-hover-disable {
+  display: none;
+  animation: 0.1s linear overlayDisable;
+}
+.formacao {
+  padding: 140px 140px;
+  background-color: #0e0a0e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.formacao .formInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 24px;
+}
+.formacao .formText {
+  font-size: 15vmin;
+  font-weight: bold;
+  font-family: "Poppins";
+  letter-spacing: 0px;
+  background-color: #c70191;
+  background-image: linear-gradient(-90deg, #c70191, #710d78);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.formacao .rewards {
+  z-index: 99999;
+  position: relative;
+  padding: 16px;
+  width: 500px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  background-color: #1b151c;
+  border-radius: 4px;
+}
+.formacao .rewards .formDecoBox {
+  z-index: -1;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(-90deg, #c70191, #710d78);
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  left: -20px;
+}
+.formacao .courses,
+.formacao .languages {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.formacao .courses .title,
+.formacao .languages .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #534154;
+  text-transform: uppercase;
+}
+.formacao .title .icon img {
+  width: 30px;
+  height: 30px;
+}
+.formacao .formInfos .infos {
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+.formacao .formInfos .infos h3 {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-left: 40px;
+}
+.formacao .formInfos .infos .decoratorText {
+  font-weight: 700;
+  color: #c70191;
+}
+.formacao .formInfos .infos .StrongText {
+  font-weight: 700;
+  padding-left: 4px;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 140px;
+  padding: 140px 140px;
+  background-color: #000000;
+}
+footer .text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 40%;
+}
+
+footer .text .main h2 {
+  color: #b1b1b1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+footer .text .main .mainDecorator {
+  color: #ed48c0;
+}
+footer .text .infos {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+footer .text .infos p {
+  font-weight: 500;
+}
+footer .text .infos .decoSignal,
+.text .infos .decoratorText {
+  color: #ed48c0;
+}
+footer .copyrigth {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+footer .copyrigth span {
+  font-weight: 400;
+  background-color: #c70191;
+  background-image: linear-gradient(-90deg, #c70191, #710d78);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@keyframes overlayEnable {
+  0% {
+    height: 0px;
+    opacity: 0.4;
+  }
+  50% {
+    height: 15px;
+    opacity: 0.7;
+  }
+  100% {
+    height: 35px;
+    opacity: 1;
+  }
+}
+@keyframes overlayDisable {
+  0% {
+    height: 35px;
+    opacity: 0.7;
+  }
+  50% {
+    height: 15px;
+    opacity: 0.4;
+  }
+  100% {
+    height: 0px;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 20px;
+    background-color: #e434b4;
+    color: #ECBAEF;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+  }
+  .heroImage img {
+    width: 180px;
+    height: 180px;
+  }
+  .heroText {
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    color: #2d232e;
+  }
+  .box-decorator {
+    position: absolute;
+    z-index: -1;
+    width: 30px;
+    top: -10px;
+    left: -20px;
+    height: 30px;
+    background-color: #e434b4;
+    border-radius: 10px;
+  }
+  .experience .projects .desc {
+    font-size: 16px;
+  }
+  .experience .projects .decoRow {
+    width: 400px;
+  }
+  .experience .projects .cards .card {
+    width: 150px;
+    height: 230px;
+  }
+  .experience .experienceText {
+    font-size: 64px;
+  }
+  .formacao .formText {
+    font-size: 64px;
+  }
+  .formacao .rewards {
+    padding: 16px;
+    width: 280px;
+    font-size: 12px;
+  }
+  .formacao .rewards .formDecoBox {
+    top: -15px;
+    left: -20px;
+  }
+  footer .text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20%;
+  }
+  footer .text .main h2 {
+    color: #b1b1b1;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  footer .text .infos {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+  }
+  footer .copyrigth {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .deskText {
+    display: none;
+  }
+  .mobileText {
+    display: block;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  nav .loc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: "Roboto";
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 20px;
+    background-color: #e434b4;
+    color: #ECBAEF;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+  }
+  .heroImage {
+    display: none;
+  }
+  .heroText {
+    padding: 0;
+    font-size: 27.6px;
+    font-weight: bold;
+    line-height: 48px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #2d232e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-decorator {
+    display: block;
+  }
+  .experience {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+  }
+  .experience .projects .desc {
+    text-align: center;
+    font-size: 16px;
+  }
+  .experience .projects .decoRow {
+    width: 400px;
+  }
+  .experience .projects .cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .experience .projects .cards .card {
+    width: 150px;
+    height: 230px;
+  }
+  .experience .experienceText {
+    font-size: 48px;
+  }
+  .formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 64px;
+  }
+  .formacao .formText {
+    font-size: 48px;
+
+    align-self: center;
+    text-align: center;
+  }
+  footer .text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 20%;
+  }
+  footer .text .main h2 {
+    color: #b1b1b1;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  footer .text .infos {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  footer .copyrigth {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width:450px) {
+  .deskText {
+    display: none;
+  }
+  .mobileText {
+    display: block;
+  }
+  body {
+    padding-top: 10px;
+  }
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo img {
+    width: 25px;
+    height: 25px;
+  }
+  nav .loc img {
+    width: 15px;
+    height: 15px;
+  }
+  nav .loc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: "Roboto";
+    font-size: 12px;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #e434b4;
+    color: #ECBAEF;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+  }
+  .heroSection {
+    padding: 20px;
+  }
+  .heroImage {
+    display: none;
+  }
+  .heroText {
+    padding: 0;
+    font-size: 5vmin;
+    font-weight: bold;
+    line-height: 32px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #2d232e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-decorator {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    top: -5px;
+    left: -10px;
+  }
+  .experience {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+  }
+  .experience .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .experience .projects .desc {
+    text-align: center;
+    font-size: 12px;
+  }
+  .experience .projects .decoRow {
+    width: 300px;
+  }
+  .experience .experienceText {
+    font-size: 32px;
+  }
+  .formacao {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .formacao .formText {
+    font-size: 32px;
+    align-self: center;
+    text-align: center;
+  }
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  footer .text {
+    gap: 10%;
+  }
+  footer .text .main h2 {
+    color: #b1b1b1;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  footer .text .infos {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+  }
+  footer .copyrigth {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+  }
+}
