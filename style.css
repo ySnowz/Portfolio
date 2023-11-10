@@ -455,8 +455,8 @@ footer .copyrigth span {
     padding: 8px 16px;
     font-size: 20px;
     background-color: #e434b4;
-    color: #ECBAEF;
-    font-weight: 700;
+    color: #C70191;
+    font-weight: bold;
     text-transform: uppercase;
     border-radius: 4px;
     cursor: pointer;
@@ -501,8 +501,15 @@ footer .copyrigth span {
   .experience .experienceText {
     font-size: 64px;
   }
+  .experience .experienceText .deskText h1{
+    line-height: 15vmin;
+  }
   .formacao .formText {
     font-size: 64px;
+  }
+  .formacao .formText .deskText h1{
+    text-transform: uppercase;
+    line-height: 15vmin;
   }
   .formacao .rewards {
     padding: 16px;
@@ -546,7 +553,10 @@ footer .copyrigth span {
 }
 
 @media screen and (max-width: 768px) {
-  .deskText {
+  .deskText{
+    display: none;
+  }
+  .deskText h1{
     display: none;
   }
   .mobileText {
@@ -576,8 +586,8 @@ footer .copyrigth span {
     padding: 8px 16px;
     font-size: 20px;
     background-color: #e434b4;
-    color: #ECBAEF;
-    font-weight: 700;
+    color: #C70191;
+    font-weight: bold;
     text-transform: uppercase;
     border-radius: 4px;
     cursor: pointer;
@@ -676,6 +686,9 @@ footer .copyrigth span {
   .deskText {
     display: none;
   }
+  .deskText h1{
+    display: none;
+  }
   .mobileText {
     display: block;
   }
@@ -712,7 +725,7 @@ footer .copyrigth span {
     padding: 8px 16px;
     font-size: 16px;
     background-color: #e434b4;
-    color: #ECBAEF;
+    color: #C70191;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 4px;
