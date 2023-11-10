@@ -71,6 +71,9 @@ main {
   user-select: none;
   width: 33px;
   height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .heroSection {
   padding: 0 140px;
