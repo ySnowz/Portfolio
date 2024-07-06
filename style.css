@@ -505,6 +505,7 @@ footer .copyrigth span {
     font-size: 64px;
   }
   .experience .experienceText .deskText h1{
+    text-transform: uppercase;
     line-height: 15vmin;
   }
   .formacao .formText {
@@ -563,6 +564,7 @@ footer .copyrigth span {
     display: none;
   }
   .mobileText {
+    text-transform: uppercase;
     display: block;
   }
   .logo {
