@@ -695,6 +695,7 @@ footer .copyrigth span {
     display: none;
   }
   .mobileText {
+    text-transform: uppercase;
     display: block;
   }
   body {
