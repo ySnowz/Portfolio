@@ -215,6 +215,7 @@ main {
   line-height: 25vmin;
 }
 .mobileText {
+  text-transform: uppercase;
   display: none;
 }
 .card {
