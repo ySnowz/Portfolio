@@ -1,137 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ySnow Portfólio</title>
+    <title>Luan — Design Engineer</title>
+    <meta name="description"
+        content="Portfólio de Luan, Design Engineer. Desenvolvimento front-end e design de interfaces. Vila Velha, ES.">
+    <link rel="canonical" href="https://ysnowz.github.io/Portfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Luan — Design Engineer">
+    <meta property="og:title" content="Luan — Design Engineer">
+    <meta property="og:description"
+        content="Portfólio de Luan, Design Engineer. Desenvolvimento front-end e design de interfaces. Vila Velha, ES.">
+    <meta property="og:url" content="https://ysnowz.github.io/Portfolio/">
+    <meta property="og:image" content="https://ysnowz.github.io/Portfolio/img/luan.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:image:alt" content="Foto de Luan">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Luan — Design Engineer">
+    <meta name="twitter:description"
+        content="Portfólio de Luan, Design Engineer. Desenvolvimento front-end e design de interfaces. Vila Velha, ES.">
+    <meta name="twitter:image" content="https://ysnowz.github.io/Portfolio/img/luan.jpg">
+    <meta name="twitter:image:alt" content="Foto de Luan">
+    <link rel="icon" href="./img/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
 </head>
 
 <body>
+    <a class="skip" href="#inicio">Ir para o conteúdo</a>
     <header>
-        <div class="logo">
-            <img src="./img/logo.svg" alt="logo">
-        </div>
-        <nav>
-            <div class="loc mobileText">
-                <div class="icon">
-                    <img src="./img/map.svg" alt="">
-                </div>
-                <span>Vila Velha - ES</span>
-            </div>
-            <ul>
-                <li class="deskText"><a href="#exp">Experiência</a></li>
-                <li class="deskText"><a href="#form">Formação</a></li>
-                <li><button>Contact</button></li>
+        <a class="logo" href="#inicio" aria-label="Luan — início">
+            <img src="./img/logo.svg" alt="" width="32" height="31">
+        </a>
+        <nav aria-label="Seções">
+            <ul class="nav-list">
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a class="nav-cta" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="hero" class="heroSection">
-            <div class="heroImage">
-                <img src="./img/fotoPrincipal.jpg" alt="logo">
+    <main id="inicio">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-photo">
+                <img src="./img/luan.jpg" alt="Foto de Luan" width="400" height="400">
             </div>
-            <div class="heroText">
-                <div class="box-decorator"></div>
-                <h1 class="deskText">FRONT-END <br>DEVELOPER & <br>DESIGNER UI/UX<span class="decorator">.</span></h1>
-                <h1 class="mobileText">FRONT-END DEVELOPER <br> & <br> DESIGNER UI/UX<span class="decorator">.</span>
-                </h1>
-                <div class="loc deskText">
-                    <div class="icon">
-                        <img src="./img/map.svg" alt="">
-                    </div>
+            <div class="hero-copy">
+                <span class="accent-square" aria-hidden="true"></span>
+                <h1 id="hero-title">Luan</h1>
+                <p class="role">Design Engineer<span class="accent">.</span></p>
+                <p class="lede">Trabalho na interseção entre desenvolvimento front-end e design de interfaces.</p>
+                <p class="loc">
+                    <img src="./img/map.svg" alt="" width="20" height="21">
                     <span>Vila Velha - ES</span>
-                </div>
+                </p>
             </div>
         </section>
-        <section id="exp" class="experience">
+
+        <section id="experiencia" class="experience" aria-labelledby="exp-title">
+            <h2 id="exp-title" class="poster"><span>Expe</span><span>riên</span><span>cia</span></h2>
             <div class="projects">
-                <div class="desc">
-                    <h3>Desenvolvo pequenos projetos pessoais <br> utilizando apenas <span class="decorator">HTML, CSS e
-                            Javascript. </span> <br> atualmente começando a fazer projetos <span
-                            class="decorator">UI/UX</span></h3>
-                </div>
-                <hr class="decoRow">
-                <div class="cards">
-                    <div class="puma card">
-                        <div class="hover-access">
-                            <a href="https://pumareply.netlify.app/">Acessar</a>
-                        </div>
-                    </div>
-                    <div class="prada card">
-                        <div class="hover-access">
-                            <a href="https://dreamy-creponne-b86b63.netlify.app/">Acessar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="experienceText">
-                <div class="deskText">
-                    <h1>Expe</h1>
-                    <h1>riên</h1>
-                    <h1>cia</h1>
-                </div>
-                <h1 class="mobileText">Experiência</h1>
+                <p class="intro">Desenvolvo pequenos projetos pessoais utilizando apenas <strong>HTML, CSS e
+                        JavaScript</strong>. Atualmente começo a fazer projetos de <strong>UI/UX</strong>.</p>
+                <hr class="rule">
+                <ul class="cards">
+                    <li>
+                        <a class="card" href="https://pumareply.netlify.app/">
+                            <span class="card-visual">
+                                <img src="./img/Puma.jpg" alt="" width="200" height="330">
+                            </span>
+                            <span class="card-body">
+                                <h3>Puma</h3>
+                                <span class="card-note">Landing page</span>
+                                <span class="card-cta">Acessar</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="card" href="https://dreamy-creponne-b86b63.netlify.app/">
+                            <span class="card-visual card-visual-mark">
+                                <img src="./img/logo.svg" alt="" width="64" height="62">
+                            </span>
+                            <span class="card-body">
+                                <h3>Vortex Store</h3>
+                                <span class="card-note">Landing page</span>
+                                <span class="card-cta">Acessar</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section id="form" class="formacao">
-            <div class="formText">
-                <div class="deskText">
-                    <h1>FORM</h1>
-                    <h1>AÇÃO</h1>
+
+        <section id="formacao" class="formacao" aria-labelledby="form-title">
+            <h2 id="form-title" class="poster poster-on-dark"><span>Form</span><span>ação</span></h2>
+            <div class="form-infos">
+                <p class="callout">Formação e cursos.</p>
+                <div class="block">
+                    <div class="block-title">
+                        <img src="./img/StudyIcon.svg" alt="" width="28" height="21">
+                        <h3>Cursos intensivos</h3>
+                    </div>
+                    <ul>
+                        <li>Origamid <span class="dash">-</span> <strong>UI Design</strong></li>
+                        <li>FreeCodeCamp <span class="dash">-</span> <strong>React</strong></li>
+                        <li>Udemy <span class="dash">-</span> <strong>Python</strong></li>
+                    </ul>
                 </div>
-                <h1 class="mobileText">FORMAÇÃO</h1>
-            </div>
-            <div class="formInfos">
-                <div class="rewards deskText">
-                    <div class="formDecoBox"></div>
-                    <h2>Veja minhas <span class="decorator">conquistas</span><br>e o que estou<br><span
-                            class="decorator">conquistando</span>.</h2>
-                </div>
-                <div class="courses">
-                    <div class="title">
-                        <div class="icon"><img src="./img/StudyIcon.svg" alt=""></div>
-                        <p>Cursos intensivos</p>
+                <div class="block">
+                    <div class="block-title">
+                        <img src="./img/LanguageIcon.svg" alt="" width="22" height="21">
+                        <h3>Idiomas</h3>
                     </div>
-                    <div class="infos">
-                        <h3>Origamid <span class="decoratorText">-</span><span class="StrongText">UI Design</span></h3>
-                        <h3>FreeCodeCamp <span class="decoratorText">-</span><span class="StrongText">React</span></h3>
-                        <h3>Udemy <span class="decoratorText">-</span><span class="StrongText">Python</span></h3>
-                    </div>
-                </div>
-                <div class="languages">
-                    <div class="title">
-                        <div class="icon"><img src="./img/LanguageIcon.svg" alt=""></div>
-                        <p>Idiomas</p>
-                    </div>
-                    <div class="infos">
-                        <h3>Inglês <span class="decoratorText">-</span><span class="StrongText">B1</span>
-                        </h3>
-                        <h3>Alemão <span class="decoratorText">-</span><span class="StrongText">A1</span></h3>
-                    </div>
+                    <ul>
+                        <li>Inglês <span class="dash">-</span> <strong>B1</strong></li>
+                        <li>Alemão <span class="dash">-</span> <strong>A1</strong></li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="text">
-            <div class="main">
-                <h2>
-                    Caso tenha interesse em fazer <br> algum projeto junto entre em <br> contato, garanto que podemos
-                    <br> fazer uma bela conexão <span class="mainDecorator">.</span>
-                </h2>
-            </div>
-            <div class="infos">
-                <p>loserss@oulook.pt</p>
-                <p><span class="decoSignal">+</span>55 21 99765 <span class="decoratorText">-</span> 2540</p>
-                <p>@dev.luan021</p>
-            </div>
+    <footer id="contato">
+        <div class="footer-grid">
+            <h2>Caso tenha interesse em fazer algum projeto junto, entre em contato. Garanto que podemos fazer uma bela
+                conexão<span class="accent-on-dark">.</span></h2>
+            <ul class="contact-list">
+                <li><a class="email" href="mailto:vortexcodeceo@gmail.com">vortexcodeceo@gmail.com</a></li>
+                <li><a href="tel:+5521997652540"><span class="accent-on-dark">+</span>55 21 99765-2540</a></li>
+                <li><a href="https://www.instagram.com/dev.luan021">Instagram · @dev.luan021</a></li>
+                <li><a href="https://www.linkedin.com/in/luan-oliveira-mendonca">LinkedIn</a></li>
+                <li><a href="https://github.com/ySnowz">GitHub</a></li>
+            </ul>
         </div>
-        <p class="copyrigth"><span>Vortex</span>. Todos os direitos reservados</p>
+        <p class="copyright"><span>Luan</span>. Todos os direitos reservados</p>
     </footer>
-    <script src="./script.js"></script>
 </body>
 
 </html>
