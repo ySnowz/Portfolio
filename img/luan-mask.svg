@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714 815">
+  <rect x="0" y="0" width="714" height="109" fill="#fff"/>
+  <!-- Overlaps the join so mask antialiasing doesn't leave a hairline. Stays clear of the corner radius. -->
+  <rect x="32" y="100" width="650" height="24" fill="#fff"/>
+  <rect x="12" y="109" width="690" height="641" rx="15" ry="15" fill="#fff"/>
+</svg>
